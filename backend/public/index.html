@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Google Search</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="logo">Google</h1>
+
+    <form class="search" id="searchForm">
+      <input class="search-input" id="query" name="q" placeholder="Search Google" />
+      <button class="search-btn" type="submit">Search</button>
+    </form>
+
+    <div class="short-info" id="shortInfo" style="display:none;">
+      Query: <b id="infoQuery"></b>
+      <span id="infoMeta"></span>
+      <a class="btn" id="downloadButton" href="#">Download JSON</a>
+    </div>
+
+    <div class="error" id="errorBox" style="display:none;"></div>
+
+    <div class="results" id="results"></div>
+  </main>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
