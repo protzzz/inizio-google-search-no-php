@@ -87,7 +87,7 @@ searchSerperRouter.get("/search", async (req: Request, res: Response) => {
       return res.status(200).json({
         query,
         page,
-        total,
+        total: results.length,
         results,
       });
     }
